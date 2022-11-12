@@ -1,0 +1,17 @@
+﻿#include <stdio.h>
+#include <math.h>
+#include <windows.h>
+
+#define a 2.0
+#define x 0.5
+void main()
+{
+	double v, z;
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+
+	z = fabs(2 - x * cos(a * a));
+	v = sin(pow(2 * z - 1, 2 / 3.0));
+	printf("z=%f\t\tv=%e\n", z, v);
+	printf("a=%f\t\tx=%e\n", a, x);
+}
